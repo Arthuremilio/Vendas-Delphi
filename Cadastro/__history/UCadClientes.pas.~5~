@@ -1,0 +1,48 @@
+unit UCadClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uTelaHeranca, Data.DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, Vcl.DBCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.Mask, Vcl.ExtCtrls, Vcl.ComCtrls,
+  RxToolEdit;
+
+type
+  TfrmCadClientes = class(TfrmTelaHeranca)
+    edtClienteId: TLabeledEdit;
+    edtNome: TLabeledEdit;
+    edtCEP: TMaskEdit;
+    Label1: TLabel;
+    edtEndereço: TLabeledEdit;
+    edtBairro: TLabeledEdit;
+    edtCidade: TLabeledEdit;
+    edtTelefone: TMaskEdit;
+    Label2: TLabel;
+    edtCelular: TMaskEdit;
+    Label3: TLabel;
+    edtEstado: TLabeledEdit;
+    edtEmail: TLabeledEdit;
+    edtCPF: TMaskEdit;
+    Label4: TLabel;
+    edtRG: TMaskEdit;
+    Label5: TLabel;
+    edtDataNascimento: TDateEdit;
+    Label6: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadClientes: TfrmCadClientes;
+
+implementation
+
+{$R *.dfm}
+
+
+
+end.

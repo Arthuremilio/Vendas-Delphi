@@ -1,0 +1,19 @@
+inherited frmTelaHeranca1: TfrmTelaHeranca1
+  Caption = 'frmTelaHeranca1'
+  ClientWidth = 906
+  TextHeight = 13
+  inherited pgcPrincipal: TPageControl
+    Width = 906
+    inherited tabListagem: TTabSheet
+      inherited grdListagem: TDBGrid
+        Height = 263
+      end
+    end
+  end
+  inherited pnlRodape: TPanel
+    Width = 906
+    inherited btnNavigator: TDBNavigator
+      Hints.Strings = ()
+    end
+  end
+end
